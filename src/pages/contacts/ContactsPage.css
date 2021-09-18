@@ -1,0 +1,41 @@
+
+.contactContainer {
+    max-width: 1200px;
+    background-color: whitesmoke;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin: 64px 8px 0 8px;
+    color: var(--bluegrey);
+}
+
+.contactsHeaderImageContainer {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.contactsHeaderImageContainer img {
+    min-height: 100%;
+    width: 100%;
+    margin-bottom: -8px;
+}
+
+.contactsHeaderImage {
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.contactsTitle {
+    margin-left: 16px;
+    margin-bottom: 0;
+}
+
+.contactInfo {
+    text-align: left;
+    max-width: 1200px;
+    padding: 16px;
+    margin-top: 0;
+}
