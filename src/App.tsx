@@ -1,24 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
+import HomePage from './pages/homepage/HomePage';
+import ContactsPage from "./pages/contacts/ContactsPage";
+import Toolbar from "./elements/toolbar/Toolbar";
 import './App.css';
 
 function App() {
+  
+  const [ lang, setLang ] = useState<string>(localStorage.getItem('lang') || "EN");
+  
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+      <Router>
+    
+        <Toolbar
+            lang={lang}
+            setLang={setLang}
+        />
+    
+        <div className="appContent">
+      
+          <Switch>
+        
+            <Route exact path="/home">
+              <HomePage
+                  lang={lang}
+              />
+            </Route>
+        
+            <Route exact path="/contacts">
+              <ContactsPage
+                  lang={lang}
+              />
+            </Route>
+        
+        
+            <Route path="*">
+              <Redirect to="/home"/>
+            </Route>
+      
+          </Switch>
+    
+        </div>
+  
+      </Router>
+      
     </div>
   );
 }

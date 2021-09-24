@@ -1,33 +1,19 @@
 import React, {useEffect} from 'react';
 import {texts} from "../../config/text";
 import './ContactsPage.css';
-// @ts-ignore
-import bees from "./bees.jpg"
 
 
 interface HomePageProps {
 	lang: string;
-	facebookSdkLoaded: boolean;
 }
 
 export default function ContactsPage(props: HomePageProps) {
 	
-	const { lang, facebookSdkLoaded } = props;
-	
-	console.log(facebookSdkLoaded);
-	
-	useEffect(() => {
-		// @ts-ignore
-		window.FB?.XFBML?.parse();
-	});
+	const { lang } = props;
 	
 	
 	return (
 		<div className="page">
-			
-			{/*<div className={"contactsHeaderImageContainer"}>*/}
-				<img className={"contactsHeaderImage"} src={bees} alt={""}/>
-			{/*</div>*/}
 			
 			<div className={"contactContainer"}>
 				
@@ -100,19 +86,6 @@ export default function ContactsPage(props: HomePageProps) {
 						</a>
 					</p>
 					
-					{
-						facebookSdkLoaded &&
-						<div style={{marginTop: 16}}>
-							<div
-								className="fb-messengermessageus"
-								// @ts-ignore
-								messenger_app_id="1081561225688381"
-								page_id="1492358727740007"
-								color="blue"
-								size="large"
-							/>
-						</div>
-					}
 					
 				</div>
 			</div>
