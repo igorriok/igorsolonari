@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import {texts} from "../../config/text";
-import './HomePage.css';
-import isImage from './is.jpg';
+import "./HomePage.css";
+import isImage from "./is.jpg";
 
 
 interface HomePageProps {
@@ -10,8 +10,7 @@ interface HomePageProps {
 
 
 export default function HomePage(props: HomePageProps) {
-	
-	const { lang } = props;
+	const {lang} = props;
 	
 	
 	return (
@@ -25,14 +24,18 @@ export default function HomePage(props: HomePageProps) {
 					</div>
 					
 					<div className={"headerBlock"}>
-						{
-							texts.get("greeting")?.get(lang)
-						}
+						<p>
+							{
+								texts.get("greeting")?.get(lang)
+							}
+						</p>
+						
+						
 					</div>
 				</header>
 				
 			</div>
 
 		</div>
-	)
+	);
 }

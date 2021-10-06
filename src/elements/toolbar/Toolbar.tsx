@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import './Toolbar.css';
-import {texts} from "../../config/text";
+import React, {useEffect, useState} from "react";
+import "./Toolbar.css";
 
 
 const languages: string[] = ["EN", "RO", "RU"];
@@ -12,10 +11,9 @@ interface ToolbarProps {
 }
 
 export default function Toolbar(props: ToolbarProps) {
-	
-	const { lang, setLang } = props;
-	const [ openMenu, setOpenMenu ] = useState<boolean>(false);
-	const [ openLanguageSelect, setOpenLanguageSelect ] = useState<boolean>(false);
+	const {lang, setLang} = props;
+	const [openMenu, setOpenMenu] = useState<boolean>(false);
+	const [openLanguageSelect, setOpenLanguageSelect] = useState<boolean>(false);
 	
 	
 	const onLanguageSelect = (language: string) => {
@@ -23,10 +21,10 @@ export default function Toolbar(props: ToolbarProps) {
 		setOpenLanguageSelect(false);
 		
 		localStorage.setItem("lang", language);
-	}
+	};
 	
 	function handleClick(e: MouseEvent) {
-		//console.dir(e);
+		// console.dir(e);
 		// @ts-ignore
 		if (e?.target?.id !== "menuButton" && e?.target?.id !== "menuIcon") {
 			setOpenMenu(false);
@@ -39,13 +37,12 @@ export default function Toolbar(props: ToolbarProps) {
 	}
 	
 	useEffect(() => {
-		
 		document.addEventListener("click", handleClick);
 		
 		return () => {
 			document.removeEventListener("click", handleClick);
-		}
-	},[]);
+		};
+	}, []);
 	
 	
 	return (
@@ -73,12 +70,12 @@ export default function Toolbar(props: ToolbarProps) {
 									{
 										languages.map((language: string) => {
 											return (
-													<span key={language} onClick={() => onLanguageSelect(language)} className={lang === language ? "selected" : ""}>
-														{
-															language
-														}
-													</span>
-											)
+												<span key={language} onClick={() => onLanguageSelect(language)} className={lang === language ? "selected" : ""}>
+													{
+														language
+													}
+												</span>
+											);
 										})
 									}
 								</div>
@@ -87,7 +84,6 @@ export default function Toolbar(props: ToolbarProps) {
 					</div>
 					
 					<div className="toolBarButton">
-						
 					
 					
 					</div>
@@ -96,7 +92,7 @@ export default function Toolbar(props: ToolbarProps) {
 				</div>
 				
 				<div className="navigationLinks">
-					
+				
 				</div>
 				
 				<div className="menuDropdown">
