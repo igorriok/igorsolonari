@@ -1,6 +1,7 @@
 import React from 'react';
 import {texts} from "../../config/text";
 import './HomePage.css';
+import isImage from './is.jpg';
 
 
 interface HomePageProps {
@@ -14,20 +15,19 @@ export default function HomePage(props: HomePageProps) {
 	
 	
 	return (
-		<div className="page" style={{ backgroundColor: "Transparent" }}>
+		<div className="page">
 			
 			<div id={"homePageContent"}>
 				
-				<div className={"greeting"} style={{ height: window.innerHeight }}>
+				<header>
+					<div>
+						<img className={"textImage"} id={"is"} src={isImage} alt={""}/>
+					</div>
 					
-					<h1 id={"greetingText"}>
-						{
-							texts.get("greeting")?.get(lang)
-						}
-					</h1>
-				
-				</div>
-	
+					<div>
+					
+					</div>
+				</header>
 				
 			</div>
 
