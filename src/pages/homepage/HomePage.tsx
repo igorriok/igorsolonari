@@ -20,12 +20,14 @@ export default function HomePage(props: HomePageProps) {
 			<div id={"homePageContent"}>
 				
 				<header>
-					<div>
+					<div className={"headerBlock"}>
 						<img className={"textImage"} id={"is"} src={isImage} alt={""}/>
 					</div>
 					
-					<div>
-					
+					<div className={"headerBlock"}>
+						{
+							texts.get("greeting")?.get(lang)
+						}
 					</div>
 				</header>
 				
