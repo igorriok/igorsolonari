@@ -18,12 +18,13 @@ export default function HomePage(props: HomePageProps) {
 			
 			<div id={"homePageContent"}>
 				
-				<header>
-					<div className={"headerBlock"}>
+				<header id={"homePageHeader"}>
+					
+					<div className={"block"}>
 						<img className={"textImage"} id={"is"} src={isImage} alt={""}/>
 					</div>
 					
-					<div className={"headerBlock"}>
+					<div className={"block"}>
 						<p>
 							{
 								texts.get("greeting")?.get(lang)
@@ -32,7 +33,44 @@ export default function HomePage(props: HomePageProps) {
 						
 						
 					</div>
+					
 				</header>
+				
+				<body id={"homePageBody"}>
+				
+					<div className={"block"}>
+						
+						<h3>
+							{
+								texts.get("fullstackLabel")?.get(lang)
+							}
+						</h3>
+						
+						<p>
+							{
+								texts.get("fullstackBody")?.get(lang)
+							}
+						</p>
+						
+					</div>
+					
+					<div className={"block"}>
+						
+						<h3>
+							{
+								texts.get("supplyChainAnalystLabel")?.get(lang)
+							}
+						</h3>
+						
+						<p>
+							{
+								texts.get("supplyChainAnalystBody")?.get(lang)
+							}
+						</p>
+					
+					</div>
+				
+				</body>
 				
 			</div>
 

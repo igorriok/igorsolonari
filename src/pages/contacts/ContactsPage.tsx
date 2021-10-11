@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react';
+import React from "react";
 import {texts} from "../../config/text";
-import './ContactsPage.css';
+import "./ContactsPage.css";
 
 
 interface HomePageProps {
@@ -8,8 +8,7 @@ interface HomePageProps {
 }
 
 export default function ContactsPage(props: HomePageProps) {
-	
-	const { lang } = props;
+	const {lang} = props;
 	
 	
 	return (
@@ -90,5 +89,5 @@ export default function ContactsPage(props: HomePageProps) {
 				</div>
 			</div>
 		</div>
-	)
+	);
 }

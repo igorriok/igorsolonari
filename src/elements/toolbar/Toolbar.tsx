@@ -70,7 +70,11 @@ export default function Toolbar(props: ToolbarProps) {
 									{
 										languages.map((language: string) => {
 											return (
-												<span key={language} onClick={() => onLanguageSelect(language)} className={lang === language ? "selected" : ""}>
+												<span
+													key={language}
+													onClick={() => onLanguageSelect(language)}
+													className={lang === language ? "selected" : ""}
+												>
 													{
 														language
 													}
