@@ -111,4 +111,53 @@ export const texts = new Map<string, Map<string, string>>([
 			"общему объему продаж телефонов."],
 		]),
 	],
+	["androidDeveloperLabel",
+		new Map<string, string>([
+			["EN", "Android developer"],
+			["RO", "Android developer"],
+			["RU", "Android developer"],
+		]),
+	],
+	["androidDeveloperBody",
+		new Map<string, string>([
+			["EN", "Started as a hobby, it became my passion. I like a lot mobile phones and all " +
+			"they can offer to people as everyday assistant. That's why I want to develop " +
+			"apps and games that will make people's life easier and interesting. " +
+			"So far I published two games on Play Market: " +
+			"https://play.google.com/store/apps/details?id=com.solonari.igor.mapshooter " +
+			"https://play.google.com/store/apps/details?id=com.solonari.igor.foodscore " +
+			"The source code can be found here: " +
+			"https://github.com/igorriok/map-shooter " +
+			"https://github.com/igorriok/Foodscore " +
+			"And for the Map-Shooter game I developed a server on Java that connects " +
+			"all the players in real time from all around the globe on real map. It's " +
+			"also integrates a SQLite database to store all the users and their points. " +
+			"Authentication is made with Google OAuth 2.0. All the details you can find " +
+			"here: " +
+			"https://github.com/igorriok/JavaServer"],
+			["RO", "Început ca un hobby, a devenit pasiunea mea. Îmi plac mult telefoanele mobile și tot ce pot " +
+			"oferi oamenilor ca asistent de zi cu zi. De aceea vreau să dezvolt aplicații și jocuri care să facă " +
+			"viața oamenilor mai ușoară și mai interesantă. Până acum am publicat două jocuri pe Play Market: " +
+			"https://play.google.com/store/apps/detailsid=com.solonari.igor.mapshooter " +
+			"https://play.google.com/store/apps/details?id = com.solonari.igor.foodscore " +
+			"Codul sursă poate fi găsit aici: " +
+			"https://github.com/igorriok/map-shooter https://github.com/igorriok/Foodscore " +
+			"Și pentru jocul Map-Shooter am dezvoltat un server pe Java care conectează toți jucătorii în timp real " +
+			"de pe tot globul pe o hartă reală. De asemenea, integrează o bază de date SQLite pentru a stoca toți " +
+			"utilizatorii și punctele lor. Autentificarea se face cu Google OAuth 2.0. Toate detaliile le puteți găsi aici: " +
+			"https://github.com/igorriok/JavaServer"],
+			["RU", "Начав как хобби, это стало моей страстью. Мне нравятся многие мобильные телефоны и все, " +
+			"что они могут предложить людям в качестве повседневных помощников. Вот почему я хочу разрабатывать " +
+			"приложения и игры, которые сделают жизнь людей проще и интереснее. Пока что я опубликовал две игры в " +
+			"Play Market: " +
+			"https://play.google.com/store/apps/detailsid=com.solonari.igor.mapshooter " +
+			"https://play.google.com/store/apps/details?id = com.solonari.igor.foodscore " +
+			"Исходный код можно найти здесь: " +
+			"https://github.com/igorriok/map-shooter https://github.com/igorriok/Foodscore " +
+			"А для игры Map-Shooter я разработал сервер на Java, который соединяет всех игроков в реальном времени " +
+			"со всего мира на реальной карте. Он также интегрирует базу данных SQLite для хранения всех пользователей " +
+			"и их баллов. Аутентификация производится с помощью Google OAuth 2.0. Все подробности вы можете найти здесь: " +
+			"https://github.com/igorriok/JavaServer"],
+		]),
+	],
 ]);
