@@ -36,7 +36,7 @@ export default function HomePage(props: HomePageProps) {
 					
 				</header>
 				
-				<body id={"homePageBody"}>
+				<div id={"homePageBody"}>
 				
 					<div className={"block"}>
 						
@@ -70,7 +70,7 @@ export default function HomePage(props: HomePageProps) {
 					
 					</div>
 				
-				</body>
+				</div>
 				
 			</div>
 
